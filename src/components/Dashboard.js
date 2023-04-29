@@ -1,4 +1,5 @@
 import React from 'react'
+// import { connect } from 'react-redux'
 import {
     Container,
     Table,
@@ -10,9 +11,10 @@ import {
 import DeleteIcon from '@mui/icons-material/Delete'
 import Chart from './Chart'
 import Total from './Total'
-import AddCar from './AddCar'
+import AddCar from '../containers/AddCar'
  
 const Dashboard = (props) => {
+    console.log(props)
     return (
         <Container maxWidth="lg" className="car-container">
             <h4>Welcome, {props.user.username}</h4>
