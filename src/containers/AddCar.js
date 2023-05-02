@@ -9,4 +9,8 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 
-export default connect(null, mapDispatchToProps(AddCar))
+
+
+
+
+export default connect(null, mapDispatchToProps)(AddCar)
